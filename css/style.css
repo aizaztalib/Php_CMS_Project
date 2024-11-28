@@ -1,0 +1,73 @@
+/* Global Styles for Pagination */
+.pager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.pager li {
+    margin: 0 5px;
+}
+
+/* Common Link Styles */
+.pager a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007bff; /* Bootstrap primary color */
+    border-radius: 30px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-weight: 500; /* Bold text */
+}
+
+/* Hover Effects */
+.pager a:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Previous Link Styles */
+.pager .previous a {
+    background-color: #6c757d; /* Secondary color for previous */
+}
+
+.pager .previous a:hover {
+    background-color: #5a6268; /* Darker shade for previous hover */
+}
+
+/* Next Link Styles */
+.pager .next a {
+    background-color: #28a745; /* Success color for next */
+}
+
+.pager .next a:hover {
+    background-color: #218838; /* Darker shade for next hover */
+}
+
+/* Page Number Styles */
+.pager li a {
+    background-color: #17a2b8; /* Info color for page numbers */
+    border: 2px solid transparent; /* Border for active page */
+}
+
+.pager li a:hover {
+    background-color: #138496; /* Darker shade for page numbers hover */
+}
+
+.pager li.active a {
+    background-color: #007bff; /* Highlight active page */
+    border: 2px solid #0056b3; /* Active border */
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .pager a {
+        padding: 8px 12px; /* Smaller padding on mobile */
+    }
+}

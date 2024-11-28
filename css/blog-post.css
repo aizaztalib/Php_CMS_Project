@@ -1,0 +1,32 @@
+/* Existing styles remain here */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/* Ensure sidebar doesn't stretch */
+.col-md-4 {
+    margin-bottom: 20px; /* Space between the sidebar and bottom */
+}
+
+/* Style for sidebar wells */
+.well {
+    margin-bottom: 20px; /* Space between individual widgets */
+    padding: 15px; /* Add padding inside the wells */
+}
+
+/* Optionally set a max-width for the sidebar */
+.col-md-4 {
+    max-width: 300px; /* Adjust based on your layout */
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+    .col-md-8, .col-md-4 {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
